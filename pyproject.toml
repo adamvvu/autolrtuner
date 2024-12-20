@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "autolrtuner"
 description = "Heuristically optimize learning rates in neural networks through subsampling loss differentials."
-keywords = ["tensorflow", "hyperparameters", "neural networks", "deep learning", "learning rate", "machine learning", "artificial intelligence"]
+keywords = ["tensorflow", "hyperparameter tuning", "neural networks", "deep learning", "learning rate", "machine learning", "artificial intelligence"]
 authors = [
     {name = "Adam Wu"},
     {email = "adamwu1@outlook.com"}

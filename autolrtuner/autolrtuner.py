@@ -28,7 +28,7 @@ class AutoLRTuner:
         tf.random.set_seed(seed)
         np.random.seed(seed)
 
-    def Tune(self, X, Y, lr_space=(1e-8, 1), num_subsamples=100, num_evals=100, batch_size=32, **kwargs):
+    def Tune(self, X, Y, lr_space=(1e-8, 1), num_subsamples=100, num_evals=100, batch_size=32):
         """
         Runs the learning rate tuning algorithm
 
