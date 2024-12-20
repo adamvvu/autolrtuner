@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autolrtuner"
+description = "Heuristically optimize learning rates in neural networks through subsampling loss differentials."
+keywords = ["tensorflow", "hyperparameters", "neural networks", "deep learning", "learning rate", "machine learning", "artificial intelligence"]
+authors = [
+    {name = "Adam Wu"},
+    {email = "adamwu1@outlook.com"}
+]
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.7"
+dependencies = [
+    "tensorflow",
+    "tqdm",
+    "ipywidgets"
+]
+classifiers = [
+    'Intended Audience :: Science/Research',
+    'Topic :: Scientific/Engineering :: Artificial Intelligence',
+    'Topic :: Scientific/Engineering :: Information Analysis',
+    'Programming Language :: Python',
+    'Operating System :: OS Independent',
+    'License :: OSI Approved :: MIT License'
+]
+dynamic = [ "version" ]
+
+[tool.setuptools]
+packages = ["autolrtuner"]
+
+[tool.setuptools.dynamic]
+version = {attr = "autolrtuner.__version__"}
+
+[project.urls]
+homepage = "https://github.com/adamvvu/autolrtuner"
+documentation = "https://github.com/adamvvu/autolrtuner"
+repository = "https://github.com/adamvvu/autolrtuner"
