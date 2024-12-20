@@ -16,7 +16,10 @@ requires-python = ">=3.8"
 dependencies = [
     "tensorflow",
     "tqdm",
-    "ipywidgets"
+    "numpy",
+    "pandas",
+    "scipy",
+    "matplotlib"
 ]
 classifiers = [
     'Intended Audience :: Science/Research',
