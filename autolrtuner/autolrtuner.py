@@ -216,7 +216,6 @@ class AutoLRTuner:
         self.initParams = {
             'W' : self.model.get_weights(),
             'lr' : self.model.optimizer.learning_rate,
-            'WOpt' : self.model.optimizer.get_weights()
         }
         self.initialized = True
     
@@ -228,7 +227,6 @@ class AutoLRTuner:
             raise Exception('Model not initialized.')
         try:
             self.model.optimizer.learning_rate = self.initParams['lr']
-            self.model.optimizer.set_weights(self.initParams['WOpt'])
             self.model.set_weights(self.initParams['W'])
         except:
             pass

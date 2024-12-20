@@ -31,7 +31,7 @@ Install from PyPi:
 
 #### Dependencies
 
-- `python >= 3.7`
+- `python >= 3.8`
 - `tensorflow >= 2.5`
 - `numpy`
 - `pandas`
